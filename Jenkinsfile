@@ -19,7 +19,7 @@ pipeline {
             }
         }
         
-        stage('Run Tests') {
+        /**stage('Run Tests') {
             // TODO: Lancer les tests
         }
         
@@ -31,10 +31,10 @@ pipeline {
             // TODO: Déployer le conteneur
             // Arrêter l'ancien conteneur s'il existe 
             // Démarrer le nouveau conteneur avec la nouvelle version
-        }
+        }**/
     }
     
-    post {
+    /**post {
         // TODO: Partie bonus
-    }
+    }**/
 }
