@@ -23,12 +23,16 @@ pipeline {
             }
         }
         
-        /**stage('Run Tests') {
-            // TODO: Lancer les tests
+        stage('Run Tests') {
+             steps{
+                sh 'npm test'
+            }
         }
         
         stage('Build Docker Image') {
-            // TODO: Construire l'image Docker
+             steps{
+                sh 'docker build -t ${DOCKER_IMAGE}:${DOCKER_TAG}'
+            }
         }
         
         stage('Deploy') {
